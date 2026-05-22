@@ -55,24 +55,24 @@ The analysis uses descriptive statistics rather than causal or inferential model
 
 | File | Description |
 |---|---|
-| `BIT_5424_Group_04_Final_Dashboard_Story.twbx` | Final packaged Tableau workbook containing the complete seven-dashboard story. Data is embedded in the package — no external connection is required to open and explore it. |
-| `BIT_5424_Group_04_Project_VTPD_Crime_Logs_Cleaning_Flow.tflx` | Tableau Prep flow used to clean, split, unpivot, and export VTPD crime log data. Connect its input step to `BIT_5424_Group_04_VTPD_Crime_Logs__Original_.hyper` before running. |
+| `VT_Campus_Safety_Dashboard_Story.twbx` | Final packaged Tableau workbook containing the complete seven-dashboard story. Data is embedded in the package — no external connection is required to open and explore it. |
+| `VT_Campus_Safety_Tableau_Prep_Flow.tflx` | Tableau Prep flow used to clean, split, unpivot, and export VTPD crime log data. Connect its input step to `BIT_5424_Group_04_VTPD_Crime_Logs__Original_.hyper` before running. |
 
 ### Data Files
 
 | File | Description |
 |---|---|
-| `BIT_5424_Group_04_Survey_Data.xlsx` | Survey dataset collected from 114 Virginia Tech students. Includes demographic information, safety perceptions, transportation experiences, resource awareness, and reporting confidence. |
-| `BIT_5424_Group_04_VTPD_Crime_Logs__Original_.hyper` | Cleaned Tableau Hyper file preserving the one-row-per-incident structure of the VTPD crime log data. Used for dashboards where the unit of analysis is the incident. |
-| `BIT_5424_Group_04_VTPD_Crime_Logs__Expanded_.hyper` | Expanded Tableau Hyper file with one row per offense, produced by the Tableau Prep flow. Used for offense-level charts, filters, and breakdowns. |
+| `VT_Campus_Safety_Survey_Data.xlsx` | Survey dataset collected from 114 Virginia Tech students. Includes demographic information, safety perceptions, transportation experiences, resource awareness, and reporting confidence. |
+| `VT_Campus_Safety_Original_Crime_Logs.hyper` | Cleaned Tableau Hyper file preserving the one-row-per-incident structure of the VTPD crime log data. Used for dashboards where the unit of analysis is the incident. |
+| `VT_Campus_Safety_Expanded_Crime_Logs.hyper` | Expanded Tableau Hyper file with one row per offense, produced by the Tableau Prep flow. Used for offense-level charts, filters, and breakdowns. |
 
 ### Project Documentation
 
 | File | Description |
 |---|---|
-| `BIT_5424_Group_04_Project_Planning_Worksheet.pdf` | Project motivation, audience, research questions, methodology, data cleaning approach, analysis goals, and planned outcomes. Includes a detailed description of the Python preprocessing pipeline stages. |
-| `BIT_5424_Group_04_Data_Collection_Worksheet.pdf` | Data collection plan, inquiry questions, measurement indicators, data sources, collection methods, and timing. |
-| `BIT_5424_Group_04_Storytelling_Worksheet.pdf` | Data story outline, hand-drawn dashboard storyboards, narrative structure, and final stakeholder call to action. |
+| `VT_Campus_Safety_Project_Planning_Worksheet.pdf` | Project motivation, audience, research questions, methodology, data cleaning approach, analysis goals, and planned outcomes. Includes a detailed description of the Python preprocessing pipeline stages. |
+| `VT_Campus_Safety_Data_Collection_Worksheet.pdf` | Data collection plan, inquiry questions, measurement indicators, data sources, collection methods, and timing. |
+| `VT_Campus_Safety_Storytelling_Worksheet.pdf` | Data story outline, hand-drawn dashboard storyboards, narrative structure, and final stakeholder call to action. |
 
 ---
 
@@ -134,18 +134,18 @@ Each recommendation should have a clear owner, timeline, and success metric so s
 Users **with Tableau Desktop** can open the packaged workbook for the complete seven-dashboard story:
 
 ```
-BIT_5424_Group_04_Final_Dashboard_Story.twbx
+VT_Campus_Safety_Dashboard_Story.twbx
 ```
 
 Users **with Tableau Prep Builder** can open the cleaning flow to inspect or re-run the data transformation pipeline:
 
 ```
-BIT_5424_Group_04_Project_VTPD_Crime_Logs_Cleaning_Flow.tflx
+VT_Campus_Safety_Tableau_Prep_Flow.tflx
 ```
 
-Connect the flow's input step to `BIT_5424_Group_04_VTPD_Crime_Logs__Original_.hyper` before running. The flow will regenerate `BIT_5424_Group_04_VTPD_Crime_Logs__Expanded_.hyper` as output. The flow is documented visually in Figure 01 of the Project Planning Worksheet.
+Connect the flow's input step to `VT_Campus_Safety_Original_Crime_Logs.hyper` before running. The flow will regenerate `VT_Campus_Safety_Expanded_Crime_Logs.hyper` as output. The flow is documented visually in Figure 01 of the Project Planning Worksheet.
 
-Users **without Tableau** can review the three project documentation PDFs and explore the survey data in `BIT_5424_Group_04_Survey_Data.xlsx`.
+Users **without Tableau** can review the three project documentation PDFs and explore the survey data in `VT_Campus_Safety_Survey_Data.xlsx`.
 
 ---
 
