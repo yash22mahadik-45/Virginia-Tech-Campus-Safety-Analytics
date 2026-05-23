@@ -151,7 +151,7 @@ Users **without Tableau** can review the three project documentation PDFs and ex
 
 ## Authors
 
-Josh Bae, Nikolas Cullifer, Tessa Hunt, Yash Mahadik, Mouni Surapaneni, and Ritika Venketesh
+Josh Bae, Nikolas Cullifer, Tessa Hunt, Yash Mahadik, Mouni Surapaneni, & Ritika Venketesh
 
 ---
 
